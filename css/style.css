@@ -12,7 +12,7 @@
 /*---header---*/
 header {
     /* width: 100vw; */
-    position: sticky;
+    /* position: sticky; */
     top: 0;
 }
 
@@ -93,31 +93,39 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #b37eb5;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
     padding: 15px;
 }
 
 .foto1 {
     height: 350px;
     width: 185px;
+    object-fit: cover;
 }
 
 .resena {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+
 }
 
 .resena div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    height: 100vh;
+    align-items: center;
+    gap: 25px;
     padding: 15px;
 }
 
 .resena div p {
     margin: 5px;
     font-size: 18px;
-    text-align: justify;
+    text-align: left;
 }
 
 .resena div span {
@@ -128,6 +136,7 @@ main {
 .resena div img {
     height: 570px;
     width: 380px;
+    object-fit: cover;
 }
 
 /*---contacto---*/
