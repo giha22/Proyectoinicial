@@ -170,12 +170,17 @@ footer {
 /* discografia */
 
 .discografia {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
+    margin: 10px 10px;
+    columns: 4 250px;
+    column-gap: 15px;
     color: white;
+}
+
+.discoAlbum {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .discoAlbum img {
@@ -186,5 +191,6 @@ footer {
 
 .discoAlbum p {
     text-align: center;
+    color: #b37eb5;
 }
 
