@@ -11,30 +11,23 @@
 
 /*---header---*/
 header {
-    /* width: 100vw; */
-    /* position: sticky; */
     top: 0;
 }
 
-header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color:#b37eb5;
+.bg-colornav {
+    background-color: #7c4dff;
 }
 
-header nav ul {
-    display: flex;
-    width: 35%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 10px;
-}
-
-header nav ul li a {
+.btn-outline-success{
+    background-color: white;
     color: black;
+    border: 1px solid black;
+}
+
+.btn-outline-success:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
 }
 
 header nav img {
@@ -46,10 +39,10 @@ header nav img {
 
 body {
     font-family: "Baloo 2", sans-serif;
+    background-color: black;
 }
 
 main {
-    background-color: black;
     color: white;
 }
 
@@ -67,7 +60,7 @@ main {
 .herodiv {
     padding: 10px;
     text-align: center;
-    color:#b37eb5;
+    color:#7c4dff;
 }
 
 .herodiv h1 {
@@ -85,61 +78,58 @@ main {
 
 .herodiv a {
     text-align: center;
-    color: #b37eb5;
+    text-decoration: none;
+    color: #7c4dff;
     padding: 5px;
     border: solid;
-    border-color: #b37eb5;
+    border-color: #7c4dff;
 }
 
 .conocelos {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;
     height: 100vh;
-    background-color: black;
-    padding: 10px;
 }
 
 .foto1 {
-    height: 350px;
-    width: 14%;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
     object-fit: cover;
+}
+
+.foto1:hover {
+    width: 300px;
 }
 
 .resena {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    color: white;
 }
 
 .resena div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    height: 100vh;
+}
+.resena p {
+    width: 80%;
     padding: 15px;
 }
 
-.resena div p {
-    margin: 5px;
-    font-size: 18px;
-    text-align: left;
+.resena div .img {
+    height: 100%;
+    width: 100%;
 }
 
-.resena div span {
-    font-family: "Black Ops One", system-ui;
-    font-size: 40px;
-}
-
-.resena div img {
-    height: 90%;
+.resena img {
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
+
 
 /*---contacto---*/
 
@@ -154,7 +144,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #b37eb5;
+    background-color: #7c4dff;
 }
 
 .redes img {
@@ -196,24 +186,59 @@ footer {
 
 .discoAlbum p {
     text-align: center;
-    color: #b37eb5;
+    color: #7c4dff;
 }
+
+/* galeria */
+
+
+.galeria p {
+    text-align: center;
+    font-size: 70px;
+    border: 3px solid #7c4dff;
+}
+
+.galeria1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.galeria1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
 
 /* responsive */
 
-/* @media (max-width: 932px){
+@media screen and (max-width: 490px){
     .herodiv h1 {
-        font-size: 80px;
+        font-size: 100px;
+    }
+
+    .herodiv p {
+        font-size: 35px;
     }
 }
-@media (max-width:1340px) {
+
+@media screen and (max-width: 700px){
     .resena div {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        /* overflow: auto; */
     }
-    .conocelos img {
-        height: 300px;
-        width: 150px;
+
+    .resena div img {
+        width: 350px;
+        height: 400px;
+        object-fit: cover;
+        position: relative;
     }
-} */
+}
