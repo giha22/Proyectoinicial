@@ -85,6 +85,12 @@ main {
     border-color: #7c4dff;
 }
 
+.herodiv a:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
 .conocelos {
     display: flex;
     width: 100%;
@@ -129,8 +135,29 @@ main {
     object-fit: cover;
 }
 
+/* nosotros */
 
+.about-us {
+    text-align: center;
+}
 
+.noticias {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+
+.tarjetasNoticias {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.tarjetasNoticias img {
+    width: 300px;
+    height: 300px;
+}
 /*---contacto---*/
 
 .formulario {
