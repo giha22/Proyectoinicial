@@ -1,3 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Black+Ops+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  /* border: 3px solid red; */
+}
 
+body {
+  font-family: "Baloo 2", sans-serif;
+  background-color: black;
+}
+
+.bg-colornav {
+  background-color: #7c4dff;
+}
+
+.btn-outline-success {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn-outline-success:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+header {
+  top: 0;
+}
+header nav img {
+  height: 50px;
+  width: 50px;
+}
+
+main {
+  color: white;
+}
+main .hero {
+  background-image: url(../img/fondo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* width: 100vw; */
+  height: 100vh;
+}
+main .hero .herodiv {
+  padding: 10px;
+  text-align: center;
+  color: #7c4dff;
+}
+main .hero h1 {
+  font-family: "Black Ops One", system-ui;
+  font-size: 120px;
+  font-weight: 400;
+  font-style: normal;
+}
+main .hero p {
+  font-size: 50px;
+}
+main .hero a {
+  text-align: center;
+  text-decoration: none;
+  color: #7c4dff;
+  padding: 5px;
+  border: solid;
+  border-color: #7c4dff;
+}
+main .hero a:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+main .conocelos {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+main .conocelos .foto1 {
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+}
+main .conocelos .foto1:hover {
+  width: 300px;
+}
+main .resena {
+  color: white;
+}
+main .resena div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+main .resena div p {
+  width: 80%;
+  padding: 15px;
+}
+main .resena div .img {
+  height: 100%;
+  width: 100%;
+}
+main .resena div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+main .about-us {
+  text-align: center;
+}
+main .noticias {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+}
+main .noticias .tarjetasNoticias {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+main .noticias .tarjetasNoticias div img {
+  width: 300px;
+  height: 300px;
+}
+
+.catalogo h1 {
+  text-align: center;
+}
+.catalogo .discografia {
+  margin: 10px 10px;
+  columns: 4 250px;
+  column-gap: 15px;
+  color: white;
+}
+.catalogo .discografia .discoAlbum {
+  width: 100%;
+  height: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+  page-break-inside: avoid;
+}
+.catalogo .discografia .discoAlbum img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.catalogo .discografia .discoAlbum p {
+  text-align: center;
+  color: #7c4dff;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria p {
+  text-align: center;
+  font-size: 70px;
+  border: 3px solid #7c4dff;
+}
+.galeria .galeria1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px;
+}
+.galeria .galeria1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #7c4dff;
+}
+footer .mapa h2 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+}
+footer .mapa a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+footer .redes h2 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+}
+footer .redes a i {
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  padding: 10px;
+}
+
+@media screen and (max-width: 490px) {
+  .herodiv h1 {
+    font-size: 100px;
+  }
+  .herodiv p {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .resena div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    /* overflow: auto; */
+  }
+  .resena div img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+  }
+}
+@media screen and (max-width: 550px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 940px) {
+  .tarjetasNoticias {
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
