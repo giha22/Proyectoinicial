@@ -1,10 +1,15 @@
 @media screen and (max-width: 490px){
-    .herodiv h1 {
-        font-size: 100px;
-    }
-
-    .herodiv p {
-        font-size: 35px;
+    main{
+        .hero {
+            .herodiv {
+                h1{
+                    font-size: 75px;
+                }
+                p{
+                    font-size: 35px;
+                }
+            }
+        }
     }
 }
 

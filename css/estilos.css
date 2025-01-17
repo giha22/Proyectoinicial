@@ -217,10 +217,10 @@ footer .redes a i {
 }
 
 @media screen and (max-width: 490px) {
-  .herodiv h1 {
-    font-size: 100px;
+  main .hero .herodiv h1 {
+    font-size: 75px;
   }
-  .herodiv p {
+  main .hero .herodiv p {
     font-size: 35px;
   }
 }
