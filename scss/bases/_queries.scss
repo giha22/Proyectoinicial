@@ -14,19 +14,22 @@
 }
 
 @media screen and (max-width: 700px){
-    .resena div {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        height: 100%;
-        /* overflow: auto; */
-    }
-
-    .resena div img {
-        width: 350px;
-        height: 400px;
-        object-fit: cover;
-        position: relative;
+    main {
+        .resena {
+            div {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                height: 100%;
+                /* overflow: auto; */
+                img {
+                    width: 350px;
+                    height: 400px;
+                    object-fit: cover;
+                    position: relative;
+                }
+            }
+        }
     }
 }
 
@@ -39,7 +42,11 @@
 }
 
 @media screen and (max-width: 940px) {
-    .tarjetasNoticias {
-        flex-direction: column;
+    main{
+        .noticias{
+            .tarjetasNoticias{
+                flex-direction: column;
+            }
+        }
     }
 }

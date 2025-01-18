@@ -1,5 +1,7 @@
+@use "../bases/operaciones";
+
 main {
-    color: white;
+    color: operaciones.$color-tres;
     .hero {
         background-image: url(../img/fondo2.jpg);
         background-size: cover;
@@ -9,29 +11,33 @@ main {
         height: 100vh;
         .herodiv {
             padding: 10px;
+            height: 100%;
             text-align: center;
-            color:#7c4dff;
+            color: operaciones.$color-uno;
         }
         h1 {
+            margin: 30px;
             font-family: "Black Ops One", system-ui;
             font-size: 120px;
             font-weight: 400;
             font-style: normal;
         }
         p {
+            margin: 30px;
             font-size: 50px;
         }
         a {
+            margin-top: 30px;
             text-align: center;
             text-decoration: none;
-            color: #7c4dff;
+            font-size: 20px;
+            color: operaciones.$color-dos;
             padding: 5px;
-            border: solid;
-            border-color: #7c4dff;
+            border: 2px solid operaciones.$color-dos;
             &:hover {
-                background-color: black;
-                color: white;
-                border-color: white;
+                background-color: operaciones.$color-dos;
+                color: operaciones.$color-tres;
+                border-color: operaciones.$color-tres;
             }
         }
     }
@@ -50,7 +56,7 @@ main {
         }
     }
     .resena {
-        color: white;
+        color: operaciones.$color-tres;
         div {
             display: flex;
             flex-direction: row;
@@ -60,6 +66,13 @@ main {
             p {
                 width: 80%;
                 padding: 15px;
+                span{
+                    font-family: "Black Ops One", system-ui;
+                    font-size: 25px;
+                    margin-left: 20px;
+                    border: 1px solid operaciones.$color-tres;
+                    padding: 5px;
+                }
             }
             .img {
                 height: 100%;
@@ -100,16 +113,18 @@ main {
 .catalogo {
     h1 {
         text-align: center;
+        font-size: 70px;
+        border: 3px solid operaciones.$color-uno;
     }
     .discografia {
         margin: 10px 10px;
         columns: 4 250px;
         column-gap: 15px;
-        color: white;
+        color: operaciones.$color-tres;
         .discoAlbum {
             width: 100%;
             height: 100%;
-            border: 1px solid grey;
+            border: 1px solid operaciones.$color-uno;
             border-radius: 10px;
             margin-bottom: 1rem;
             text-align: center;
@@ -120,8 +135,7 @@ main {
                 border-radius: 10px;
             }
             p {
-                text-align: center;
-                color: #7c4dff;
+                color: operaciones.$color-uno;
             }
         }
     }
@@ -137,7 +151,7 @@ main {
     p {
         text-align: center;
         font-size: 70px;
-        border: 3px solid #7c4dff;
+        border: 3px solid operaciones.$color-uno;
     }
     .galeria1 {
         display: grid;
