@@ -12,5 +12,9 @@
 
 body {
     font-family: "Baloo 2", sans-serif;
-    background-color: operaciones.$color-dos;
+    color: operaciones.$color-dos;
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }

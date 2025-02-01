@@ -1,7 +1,15 @@
 @use "../bases/operaciones";
 
-.bg-colornav {
-    background-color: operaciones.$color-uno;
+// .bg-colornav {
+//     background-color: operaciones.$color-uno;
+// }
+
+// .navbar {
+//     background: rgba(0, 0, 0, 0.2); /* Fondo negro con 50% de opacidad */
+// }
+
+a.nav-link.active {
+    color: operaciones.$color-dos;
 }
 
 .btn-outline-success{
