@@ -8,9 +8,22 @@
 //     background: rgba(0, 0, 0, 0.2); /* Fondo negro con 50% de opacidad */
 // }
 
+
+
 a.nav-link.active {
     color: operaciones.$color-dos;
 }
+
+a.nav-link.active:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+    background-color: operaciones.$color-tres;
+};
+
+a.nav-link.active:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+};
 
 .btn-outline-success{
     background-color: operaciones.$color-tres;
