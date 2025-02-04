@@ -95,6 +95,11 @@ main {
         h1 {
             @extend %titulos;
         }
+        p{
+            background: rgba(0, 0, 0, 0.9);
+            margin: 15px;
+            color: operaciones.$color-tres;
+        }
     }
     .noticias {
         display: flex;

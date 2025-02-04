@@ -155,6 +155,11 @@ main .resena div img {
 main .about-us {
   text-align: center;
 }
+main .about-us p {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 15px;
+  color: white;
+}
 main .noticias {
   display: flex;
   flex-direction: column;
